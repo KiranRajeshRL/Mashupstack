@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Card</title>
+        <style>
+            div.sticky{
+                background-color: lightgray;
+                position: sticky;
+                top: 0px;
+                
+                text-align: center;
+                padding: 10px;
+            }
+            .contact_card{
+                position: relative;
+                padding: 10px;
+                height: 1000px;
+                margin-top: 40px;
+                padding-right: 240px;
+            }
+            .contact{
+                background-color: aliceblue;
+                border-left: 2px solid black;
+                position: absolute;
+                right: 10px;
+                top: 20px;
+                padding: 10px;
+                text-align: center;
+                overflow: auto;
+            }
+            .profile_pic{
+                float: left;
+                border-right: 2px solid black;
+                padding: 10px;
+            }
+            div.info{
+                background-color: beige;
+                margin-left: 160px;
+                text-align: center;
+                overflow: auto;
+                padding: 10px;
+            }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="sticky"><h1>Company Contact Card</h1></div>
+    <div class="contact_card">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/032/176/191/small/business-avatar-profile-black-icon-man-of-user-symbol-in-trendy-flat-style-isolated-on-male-profile-people-diverse-face-for-social-network-or-web-vector.jpg" alt="Profile Picture" width="127" height="127" class="profile_pic">
+        
+        <div class="info">
+            <h2>John Doe</h2>
+            <p>Software Engineer</p>
+            <p>Passionate developer with experience in web technologies and
+        building scalable applications.</p>
+        </div>
+        
+        <div class="contact">
+            <p><b>Contact Info</b></p>
+            <p>Email: john.doe@example.com</p>
+            <p>Phone: +91 12345 67890</p>
+        </div>
+    </div>
+</body>
+</html>
