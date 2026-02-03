@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Announcement</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=award_star" />
+    <style>
+        h1{
+            text-align: center;
+        }
+        .image{
+            float: left;
+            margin-right: 20px;
+        }
+        div.notice{
+            background-color: rgb(216, 189, 232);
+            padding: 30px 0px;
+            position: relative;
+            margin: auto;
+            overflow: auto;
+        }
+        div.badge{
+            position: absolute;
+            right: 10px;
+        }
+        
+    </style>
 </head>
 <body>
     <h1>Important Notice</h1>
-    <img src="https://images.uniapply.com/uploads/college/image/500/3984/St_Thomas_Central_School_7070_School_Building_1_UA_4.jpg" alt="School" width="300" height="200">
-    
+    <div class="notice">
+    <img src="https://images.uniapply.com/uploads/college/image/500/3984/St_Thomas_Central_School_7070_School_Building_1_UA_4.jpg" alt="School" width="200" height="200" class="image">
+    <p>
+        This is to inform all students and parents that the school will remain
+      closed tomorrow due to scheduled maintenance work. Regular classes will
+      resume the following day. Students are advised to check the school portal
+      for further updates and announcements.
+    </p>
+    <div class="badge">
+        <span class="material-symbols-outlined">award_star</span>
+        Stay Safe!
+    </div>
+</div>
 </body>
 </html>
