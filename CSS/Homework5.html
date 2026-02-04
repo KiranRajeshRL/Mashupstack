@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <style>
+        p::first-line{
+            font-weight: bold;
+        }
+        p::first-letter{
+            font-size: larger;
+            color: rgb(244, 6, 41);
+        }
+        .quote{
+            font-style: italic;
+            padding: 20px;
+        }
+        .quote::before{
+            content: " “ ";
+            font-size: 24px;
+            color: rgb(255, 0, 166);
+        }
+        a.link{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="title"><h1>My Blog Post</h1></div>
+    <div class="author"><h1>By John Doe</h1></div>
+    <h4>Introduction</h4>
+    <h4>Overview</h4>
+    <div class="content">
+        <p>This is the content of my blog post. It contains interesting information about various topics that I find fascinating and worth sharing with my readers. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sapiente dolorum quos iusto reiciendis sint eius in. Doloremque, voluptate quibusdam cupiditate magnam temporibus, fuga error ipsam, at explicabo corrupti fugiat!</p>
+        <a href="#">Read More</a>
+
+        <div class="quote">
+            Good design is as little as possible.
+        </div>
+    </div>
+</body>
+</html>
