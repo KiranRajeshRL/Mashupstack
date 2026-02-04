@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Post</title>
     <style>
+        .title{
+            text-align: center;
+        }
+        .author{
+            text-align: center;
+        }
         p::first-line{
             font-weight: bold;
         }
@@ -21,8 +27,21 @@
             font-size: 24px;
             color: rgb(255, 0, 166);
         }
-        a.link{
-            color: aqua;
+        a:link{
+            color: rgb(232, 53, 53);
+        }
+        a:visited{
+            color: rgb(48, 153, 118);
+        }
+        a:hover{
+            color: rgb(5, 130, 239);
+        }
+
+        h4{
+            display: inline;
+        }
+        h4 + h4{
+            color: rgb(36, 193, 193);
         }
     </style>
 </head>
@@ -33,7 +52,7 @@
     <h4>Overview</h4>
     <div class="content">
         <p>This is the content of my blog post. It contains interesting information about various topics that I find fascinating and worth sharing with my readers. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sapiente dolorum quos iusto reiciendis sint eius in. Doloremque, voluptate quibusdam cupiditate magnam temporibus, fuga error ipsam, at explicabo corrupti fugiat!</p>
-        <a href="#">Read More</a>
+        <a href="https://example.net" target="_blank">Read More</a>
 
         <div class="quote">
             Good design is as little as possible.
