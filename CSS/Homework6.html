@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Blog Section</title>
+    <style>
+        a[href^="https"]{
+            color: red;
+        }
+        img[src$="jpg"]{
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        h1{
+            text-align: center;
+        }
+        
+        @media only screen and (max-width:600px){
+            body{
+                font-size: 14px;
+            }
+        }
+        @media only screen and (orientation: portrait){
+            body{
+                background-color: lightyellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Featured Blog Section</h1>
+    <div class="blog_post">
+        <div class="post1">
+            <h2>
+                Learning HTML Basics
+            </h2>
+            <img src="https://epigra.com/assets/blog/html-code.jpg" alt="HTML Logo" height="150px">
+            <p>
+                HTML is the foundation of web development.
+            </p>
+            <a href="https://example.com">
+                Read More
+            </a>
+        </div>
+            <div class="post2">
+            <h2>
+                CSS for Beginners
+            </h2>
+            <img src="https://www.milesweb.com/blog/wp-content/uploads/2025/06/css-image-styling.png" alt="CSS Logo" height="140px">
+            <p>
+                CSS helps style and layout web pages.
+            </p>
+            <a href="http://example.org">Read More</a>
+        </div>
+    </div>
+</body>
+</html>
