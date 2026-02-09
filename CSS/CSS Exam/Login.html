@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .container{
+            height: 100%;
+        }
+        .login_head{
+            font-size: xx-large;
+            margin-bottom: 25px;
+            color: orangered;
+        }
+        .login_form{
+            float: right;
+            width: 50%;
+            height: 100%;
+            position: relative;
+        }
+        .login_inner {
+            width: 80%;
+            height: 320px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        label{
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        button{
+            background-color: orangered;
+            color: white;
+        }
+        
+        input[type="email"],
+        input[type="password"],
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        .remember{
+            margin-bottom: 20px;
+        }
+        .image{
+            float: left;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(rgb(141, 103, 161), rgb(234, 168, 93));
+        }
+        
+       @media only screen and (max-width: 600px) {
+            .image {
+                display: none;    
+            }
+            .login_form{
+                float: none;
+                width: 100%;
+            }
+       }
+       
+        
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            
+        </div>
+        <div class="login_form">
+            <div class="login_inner">
+                <div class="login_head">
+                    Login Form
+                </div>
+                <div class="email">
+                    <label>Email :</label>
+                    <input type="email">
+                </div>
+                <div class="password">
+                    <label>Password :</label>
+                    <input type="password">
+                </div>
+                <div class="remember">
+                    <input type="checkbox"> Remember Me
+                </div>
+                <button>Login</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
