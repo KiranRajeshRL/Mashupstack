@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Progress Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+    sup .badge{
+        font-size: medium;
+    }
+    .pro{
+        padding: 50px 0px;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="breadcrumb my-2">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item">Courses</li>
+            <li class="breadcrumb-item active">Web Development</li>
+        </ul>
+        <h1 class="display-3 my-4" style="background: linear-gradient(blue, white, lightblue); text-align: center;">Web Development Course <sup><span class="badge badge-info ">New</span></sup></h1>
+        <div class="pro">
+        <div class="progress my-2" style="height: 25px;">
+            <div class="progress-bar bg-success progress-bar-striped" style="width: 100%;">HTML - 100%</div>
+        </div>
+        <div class="progress my-2" style="height: 25px;">
+            <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" style="width: 75%;">CSS - 75%</div>
+        </div>
+        <div class="progress my-2" style="height: 25px;">
+            <div class="progress-bar bg-warning" style="width: 50%;">JavaScript - 50%</div>
+        </div>
+        <div class="progress my-2" style="height: 25px;">
+            <div class="progress-bar bg-danger" style="width: 25%;">Bootstrap - 25%</div>
+        </div>
+        </div>
+        <div class="text-center my-5">
+            <button class="btn btn-success">Start</button>
+            <button class="btn btn-outline-secondary">Pause</button>
+            <button class="btn btn-danger">Reset</button>
+        </div>
+        
+        <ul class="pagination justify-content-center pagination-bottom">
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
+        </ul>
+        
+    </div>
+</body>
+</html>
