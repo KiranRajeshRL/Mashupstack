@@ -12,11 +12,106 @@
 <body>
     <div class="container-fluid">
         <h1 class="display-1 text-center">FAQs</h1>
-        <button data-toggle="collapse" data-target="#demo">Collapsible</button>
-        <div id="demo" class="collapse">
-            Some text in collapsible
+        <div id="accordian">
+            <div class="card my-1">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        What services do you provide?
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-parent="#accordian">
+                    <div class="card-body">
+                        We provide 24/7 customer support and technical assistance.
+                    </div>
+                </div>
+            </div>
+            <div class="card my-1">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                        How can I contact support?
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordian">
+                    <div class="card-body">
+                        You can reach us via call, email, or live chat.
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-5">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseThree">
+                        What are your support hours?
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordian">
+                    <div class="card-body">
+                        Our support team is available 24/7.
+                    </div>
+                </div>
+            </div>
         </div>
-        
+
+        <h2 class="text-center my-4">Customer Support Team</h2>
+        <div class="row justify-content-center">
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">
+                            Alice
+                        </h3>
+                        <p class="card-text">Technical Support</p>
+                        <div class="dropdown">
+                            <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                                Quick Actions
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Call</a>
+                                <a class="dropdown-item" href="#">Email</a>
+                                <a class="dropdown-item" href="#">Message</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">
+                            Bob Smith
+                        </h3>
+                        <p class="card-text">Customer Relations</p>
+                        <div class="dropdown">
+                            <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                                Quick Actions
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Call</a>
+                                <a class="dropdown-item" href="#">Email</a>
+                                <a class="dropdown-item" href="#">Message</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">
+                            Carol Lee
+                        </h3>
+                        <p class="card-text">Live Chat Support</p>
+                        <div class="dropdown">
+                            <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                                Quick Actions
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Call</a>
+                                <a class="dropdown-item" href="#">Email</a>
+                                <a class="dropdown-item" href="#">Message</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
