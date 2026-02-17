@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bakery Feedback</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <h3 class="text-center my-4 display-4">Online Bakery Feedback Form</h3>
+        <div class="form-group">
+            <label for="usr">Name:</label>
+            <input type="text" class="form-control" id="usr" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter Email">
+        </div>
+        <div class="form-group">
+            <label for="feedback">Feedback:</label>
+            <textarea name="feedback" id="feedback" class="form-control" placeholder="Enter Feedback" rows="3"></textarea>
+        </div>
+        <div class="form-group">Preferred Contact Method
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="contact">Email
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="contact">Phone
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Satisfaction Level (1 = Poor, 10 = Excellent)</label>
+            <input type="range" class="form-control-range" name="range" min="1" max="10">
+        </div>
+        <div class="form-group">
+            <label for="info">Type of Order</label>
+            <select class="form-control" id="info">
+                <option>Cake</option>
+                <option>Cookies</option>
+                <option>Pastries</option>
+            </select>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary my-4">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
