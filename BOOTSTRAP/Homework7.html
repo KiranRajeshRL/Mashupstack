@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=info" />
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center my-4">Explore With Us</h2>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li class="active" data-target="#demo" data-slide-to="0"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="height: 450px;">
+                    <img src="https://images.pexels.com/photos/1473080/pexels-photo-1473080.jpeg?cs=srgb&dl=pexels-raybilcliff-1473080.jpg&fm=jpg" alt="Beach" class="d-block w-100 h-100">
+                    <div class="carousel-caption">
+                        <h4>Relax at Beautiful Beaches</h4>
+                        <p>Enjoy exclusive beach vacation packages.</p>
+                        <button class="btn btn-warning" data-toggle="modal" data-target="#bookModal">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height: 450px;">
+                    <img src="https://i.natgeofe.com/n/c9107b46-78b1-4394-988d-53927646c72b/1095.jpg" alt="Mountain" class="d-block w-100 h-100">
+                    <div class="carousel-caption">
+                        <h4>Adventure in the Mountains</h4>
+                        <p>Discover breathtaking mountain destinations.</p>
+                        <button class="btn btn-warning" data-toggle="modal" data-target="#bookModal">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-item" style="height: 450px;">
+                    <img src="https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/new-york-city-edted?_a=BAVAZGB00" alt="City" class="d-block w-100 h-100">
+                    <div class="carousel-caption">
+                        <h4>Explore Vibrant Cities</h4>
+                        <p>Experience culture and nightlife worldwide.</p>
+                        <button class="btn btn-warning" data-toggle="modal" data-target="#bookModal">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <a href="#demo" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#demo" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+    
+    <div class="modal fade" id="bookModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Booking Information</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    Contact our travel experts to customize your trip and get the best offers available today!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="my-5 text-center">
+        <a href="#" data-toggle="tooltip" title="Click 'Book Now' to reserve your package."><span class="material-symbols-outlined">info</span></a>
+    </div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
