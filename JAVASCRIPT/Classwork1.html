@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Tracking</title>
+</head>
+<body>
+    <p>Total Earnings = <span id="total_price"></span></p>
+    <p>Total Earnings = <span id="new_total_price"></span></p>
+    <script>
+        var t_shirt = 400;
+        var cap = 150;
+        var t_shirt_sold = 5;
+        var cap_sold = 3;
+        var tot_price = t_shirt * t_shirt_sold + cap * cap_sold;
+        document.getElementById("total_price").innerHTML = tot_price;
+        var new_t_shirt = 450;
+        var new_tot_price = new_t_shirt * t_shirt_sold + cap * cap_sold;
+        document.getElementById("new_total_price").innerHTML = new_tot_price;
+    </script>
+    
+</body>
+</html>

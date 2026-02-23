@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <script>
+        var r = "Rice";
+        var s = "Sugar";
+        var w = "Wheat";
+        var price_r = 80;
+        var price_s = 30;
+        var price_w = 75;
+        var qty_r = 10;
+        var qty_s = 2;
+        var qty_w = 8;
+        var cost_r = price_r * qty_r;
+        var cost_s = price_s * qty_s;
+        var cost_w = price_w * qty_w;
+        var total = cost_r + cost_s + cost_w;
+        var new_qty_s = 5;
+        var new_cost_s = price_s * new_qty_s;
+        var new_total = cost_r + new_cost_s + cost_w;
+        console.log("Total"  + "=" + total);
+        console.log("Updated Total"  + "=" + new_total);
+    </script>
+</body>
+</html>
